@@ -470,6 +470,7 @@
     <ClCompile Include="..\crypto\rand\rand_os2.c" />
     <ClCompile Include="..\crypto\rand\rand_unix.c" />
     <ClCompile Include="..\crypto\rand\rand_win.c" />
+    <ClCompile Include="..\crypto\rand\rand_winphone.c" />
     <ClCompile Include="..\crypto\rand\randfile.c" />
     <ClCompile Include="..\crypto\bio\b_dump.c" />
     <ClCompile Include="..\crypto\bio\b_print.c" />
@@ -875,6 +876,9 @@
     <ClCompile Include="..\crypto\krb5\krb5_asn.c" />
     <ClCompile Include="..\crypto\txt_db\txt_db.c" />
     <ClCompile Include="..\crypto\pqueue\pqueue.c" />
+    <ClCompile Include="src\random.cpp">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\e_os.h" />
@@ -959,6 +963,7 @@
     <ClInclude Include="..\crypto\bf\bf_pi.h" />
     <ClInclude Include="..\crypto\bf\blowfish.h" />
     <ClInclude Include="..\ms\uplink.h" />
+    <ClInclude Include="src\random.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

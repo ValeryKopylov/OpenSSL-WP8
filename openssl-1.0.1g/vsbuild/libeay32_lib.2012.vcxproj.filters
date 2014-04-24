@@ -635,6 +635,9 @@
     <ClCompile Include="..\crypto\rand\rand_win.c">
       <Filter>Source Files\crypto\rand</Filter>
     </ClCompile>
+    <ClCompile Include="..\crypto\rand\rand_winphone.c">
+      <Filter>Source Files\crypto\rand</Filter>
+    </ClCompile>
     <ClCompile Include="..\crypto\rand\randfile.c">
       <Filter>Source Files\crypto\rand</Filter>
     </ClCompile>
@@ -1898,6 +1901,9 @@
     <ClCompile Include="..\crypto\evp\evp_cnf.c">
       <Filter>Source Files\crypto\evp</Filter>
     </ClCompile>
+    <ClCompile Include="src\random.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\e_os.h">
@@ -2145,6 +2151,9 @@
     </ClInclude>
     <ClInclude Include="..\ms\uplink.h">
       <Filter>Header Files\ms</Filter>
+    </ClInclude>
+    <ClInclude Include="src\random.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
